@@ -10,3 +10,5 @@ $trening->trajanje = $_GET['trajanje'];
 $trening->teniser_id = $_GET['teniser'];
 
 $trening->dodajTrening($trening->datum, $trening->vreme, $trening->teren_id, $trening->trajanje, $trening->teniser_id);
+
+header("Location: termini.php");
