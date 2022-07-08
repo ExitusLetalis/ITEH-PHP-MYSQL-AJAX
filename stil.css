@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+#w-pocetna{
+    width: 100%;
+    height: 450px;
+}
+
+#novitermin-tekst{
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.forma{
+    width: 400px;
+}
+
+.fr, .sr{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+#rzrbtn{
+    margin-top: 20px;
+    height: 50px;
+    width: 400px;
+}
