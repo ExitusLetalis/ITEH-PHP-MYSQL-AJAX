@@ -25,6 +25,7 @@
                 <th>Lokacija terena</th>
                 <th>Trajanje</th>
                 <th>Teniser</th>
+                <th>EDIT</th>
             </tr>
         </thead>
 
@@ -32,7 +33,7 @@
             <?php
 
             $konekcija = new mysqli("localhost", "root", "", "trening");
-            $sql = "SELECT trening.datum, trening.vreme, teren.naziv, teren.lokacija, trening.trajanje, teniser.ime, teniser.prezime 
+            $sql = "SELECT trening.id, trening.datum, trening.vreme, teren.naziv, teren.lokacija, trening.trajanje, teniser.ime, teniser.prezime 
             FROM trening JOIN teren ON trening.teren_id=teren.id 
             JOIN teniser ON trening.teniser_id = teniser.id";
 
@@ -47,7 +48,7 @@
                     <td><?php echo $t['lokacija'];  ?></td>
                     <td><?php echo $t['trajanje'];  ?></td>
                     <td><?php echo $t['ime'] . " " . $t['prezime'];  ?></td>
-
+                    <td><a href="editTrening.php?IDTRENING=<?php echo $t['id']; ?>"><button class="btn btn-success" id="biz">EDIT</button></a></td>
                 </tr>
             <?php
             }
