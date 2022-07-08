@@ -16,7 +16,7 @@
 
     <h1 id="novitermin-tekst">NOVI TRENING TERMIN</h1>
 
-    <form>
+    <form action="saveTrening.php" method="get">
 
         <div class="fr">
 
@@ -33,6 +33,18 @@
             <div class="forma">
                 <label class="form-label">Teren: </label>
                 <select class="form-select" name="teren">
+                    <?php
+
+                    $konekcija = new mysqli("localhost", "root", "", "trening");
+                    $sql  = "select * from teren";
+                    $rezultat = $konekcija->query($sql);
+
+                    while ($t = mysqli_fetch_array($rezultat)) {
+                    ?>
+                        <option value="<?php echo $t['id']; ?>"><?php echo $t['naziv']; ?></option>
+                    <?php
+                    }
+                    ?>
                 </select>
             </div>
 
@@ -48,6 +60,17 @@
             <div class="forma">
                 <label class="form-label">Teniser: </label>
                 <select class="form-select" name="teniser">
+                    <?php
+
+                    $sql2  = "select * from teniser";
+                    $rezultat2 = $konekcija->query($sql2);
+
+                    while ($t = mysqli_fetch_array($rezultat2)) {
+                    ?>
+                        <option value="<?php echo $t['id']; ?>"><?php echo $t['ime'] . " " . $t['prezime']; ?></option>
+                    <?php
+                    }
+                    ?>
                 </select>
             </div>
 
