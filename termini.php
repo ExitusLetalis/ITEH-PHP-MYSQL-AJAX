@@ -16,7 +16,7 @@
 
     <h1 id="rezter-tekst">REZERVISANI TRENING TERMINI</h1>
 
-    <table class="table table-bordered table-light border border-2 border-dark" id="trez">
+    <table class="table table-bordered table-light border border-2 border-dark text-center" id="trez">
         <thead>
             <tr>
                 <th>Datum</th>
@@ -25,7 +25,7 @@
                 <th>Lokacija terena</th>
                 <th>Trajanje</th>
                 <th>Teniser</th>
-                <th>EDIT</th>
+                <th>EDIT-DELETE</th>
             </tr>
         </thead>
 
@@ -48,7 +48,10 @@
                     <td><?php echo $t['lokacija'];  ?></td>
                     <td><?php echo $t['trajanje'];  ?></td>
                     <td><?php echo $t['ime'] . " " . $t['prezime'];  ?></td>
-                    <td><a href="editTrening.php?IDTRENING=<?php echo $t['id']; ?>"><button class="btn btn-success" id="biz">EDIT</button></a></td>
+                    <td>
+                        <a href="editTrening.php?IDTRENING=<?php echo $t['id']; ?>"><button class="btn btn-success" id="biz">EDIT</button></a>
+                        <a href="deleteTrening.php?IDTRENING=<?php echo $t['id']; ?>"><button class="btn btn-success" id="dd">DELETE</button></a>
+                    </td>
                 </tr>
             <?php
             }

@@ -16,7 +16,7 @@
 
     <h1 id="novitermin-tekst">NOVI TRENING TERMIN</h1>
 
-    <form action="saveTrening.php" method="get">
+    <form action="saveTrening.php" method="get" class="text-center">
 
         <div class="fr">
 
