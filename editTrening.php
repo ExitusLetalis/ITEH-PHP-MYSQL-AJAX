@@ -26,7 +26,7 @@
 
     <h1 id="novitermin-tekst">IZMENA TRENING TERMINA</h1>
 
-    <form method="get">
+    <form action="updateTrening.php" method="get">
 
         <div class="fr">
 
@@ -83,7 +83,7 @@
                 </select>
             </div>
 
-            <button type="submit" class="btn btn-success" id="rzrbtn">Rezerviši</button>
+            <button type="submit" class="btn btn-success" name="TID" value="<?php echo $_GET['IDTRENING'] ?>" id="rzrbtn">Rezerviši</button>
 
         </div>
 
