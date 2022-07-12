@@ -14,6 +14,10 @@
 
     <img src="https://www.insidesport.in/wp-content/uploads/2022/04/byersandco-wimbledon-1594393920819.jpg" alt="" id="w-pocetna">
 
+    <?php
+    include 'navbar.php';
+    ?>
+
     <h1 id="rezter-tekst">REZERVISANI TRENING TERMINI</h1>
 
     <table class="table table-bordered table-light border border-2 border-dark text-center" id="trez">
@@ -29,7 +33,7 @@
             </tr>
         </thead>
 
-        <tbody>
+        <tbody id="bdy">
             <?php
 
             $konekcija = new mysqli("localhost", "root", "", "trening");
@@ -60,8 +64,8 @@
 
     </table>
 
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
 
 </body>
 

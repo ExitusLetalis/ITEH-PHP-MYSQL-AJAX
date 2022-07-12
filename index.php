@@ -14,6 +14,11 @@
 
     <img src="https://www.insidesport.in/wp-content/uploads/2022/04/byersandco-wimbledon-1594393920819.jpg" alt="" id="w-pocetna">
 
+    <?php
+    include 'navbar.php';
+    ?>
+
+
     <h1 id="novitermin-tekst">NOVI TRENING TERMIN</h1>
 
     <form action="saveTrening.php" method="get" class="text-center">

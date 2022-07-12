@@ -42,3 +42,16 @@ body{
     margin-top: 30px;
     margin-left: 230px;
 }
+
+nav {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    margin-right: 2%;
+}
+
+.links {
+    margin-left: 900px;
+}
