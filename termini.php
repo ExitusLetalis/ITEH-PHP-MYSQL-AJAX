@@ -23,13 +23,13 @@
     <table class="table table-bordered table-light border border-2 border-dark text-center" id="trez">
         <thead>
             <tr>
-                <th>Datum</th>
-                <th>Vreme</th>
-                <th>Naziv terena</th>
-                <th>Lokacija terena</th>
-                <th>Trajanje</th>
-                <th>Teniser</th>
-                <th>EDIT-DELETE</th>
+                <th kolona="datum" sort="asc">Datum</th>
+                <th kolona="vreme" sort="asc">Vreme</th>
+                <th kolona="naziv" sort="asc">Naziv terena</th>
+                <th kolona="lokacija" sort="asc">Lokacija terena</th>
+                <th kolona="trajanje" sort="asc">Trajanje</th>
+                <th kolona="ime" sort="asc">Teniser</th>
+                <th kolona="edit" sort="asc">EDIT-DELETE</th>
             </tr>
         </thead>
 
